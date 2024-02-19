@@ -1,14 +1,13 @@
-var rootElement = document.documentElement;
-const switchButton = document.querySelector('[data-js="dark-mode"]');
 const body = document.querySelector('[data-js="body"]');
-console.log(typeof switchButton);
 
-switchButton.addEventListener("change", () => {
-  const clicked = switchButton.checked;
-  console.log(clicked);
-  if (clicked) {
-    body.classList.add("dark-mode");
+const bookmarkImg = document.querySelector('[data-js="bookmark-check"]');
+console.log(bookmarkImg);
+
+bookmarkImg.addEventListener("click", (event) => {
+  console.log(event.target.src);
+  if (event.target.src === "http://127.0.0.1:5502/assets/bookmark.png") {
+    event.target.src = "http://127.0.0.1:5502/assets/bookmark_filled.png";
   } else {
-    body.classList.remove("dark-mode");
+    event.target.src = "http://127.0.0.1:5502/assets/bookmark.png";
   }
 });
