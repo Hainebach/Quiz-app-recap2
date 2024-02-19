@@ -81,3 +81,14 @@ section {
 .footer__link.footer__link--active {
   background-color: var(--active-color);
 }
+
+form {
+  position: relative;
+  background-color: #d8c3a5;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
