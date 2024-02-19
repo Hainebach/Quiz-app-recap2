@@ -1,6 +1,6 @@
 :root {
-  --accent-color: lightblue;
-  --active-color: rgba(0, 155, 255, 1);
+  --accent-color: #eae7dc;
+  --active-color: #e98074;
   --fs-500: 1.1rem;
   --fs-600: 1.5rem;
   --fs-900: 1.75rem;
@@ -41,7 +41,7 @@ main {
 
 section {
   position: relative;
-  background-color: lightgray;
+  background-color: #d8c3a5;
   padding: 10px;
   border: 1px solid black;
   margin-bottom: 40px;
