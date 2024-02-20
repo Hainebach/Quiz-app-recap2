@@ -10,6 +10,12 @@ body {
   margin: 0;
 }
 
+.dark-mode {
+  background-color: #8a6661;
+  --accent-color: #76746e;
+  --active-color: #743c36;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -74,4 +80,15 @@ section {
 
 .footer__link.footer__link--active {
   background-color: var(--active-color);
+}
+
+form {
+  position: relative;
+  background-color: #d8c3a5;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Quiz App</h1>
     </header>
@@ -17,12 +17,15 @@
           class="question-card__icon"
           src="./assets/bookmark.png"
           alt="bookmark"
+          data-js="bookmark-check"
         />
         <h2 class="question-card__title">
-          What property flips the axes of flexbox
+          What is the more common name for serigraphy?
         </h2>
-        <button class="question-card__button">show answer</button>
-        <p class="question-card__answer"></p>
+        <button class="question-card__button" data-js="question-card__button">
+          show answer
+        </button>
+        <p class="question-card__answer" data-js="question-card__answer"></p>
         <div class="question-card__tags">
           <div class="question-card__tag">#html</div>
           <div class="question-card__tag">#css</div>
@@ -35,7 +38,9 @@
           src="./assets/bookmark_filled.png"
           alt="bookmark filled"
         />
-        <h2 class="question-card__title">Why is accessibility important?</h2>
+        <h2 class="question-card__title">
+          What is the name of the donkey in Winnie-the-Pooh?
+        </h2>
         <button class="question-card__button">show answer</button>
         <p class="question-card__answer"></p>
         <div class="question-card__tags">
@@ -50,7 +55,8 @@
           alt="bookmark"
         />
         <h2 class="question-card__title">
-          What are the different position property values?
+          Who were Arges, Brontes, and Steropes, who forged Zeus' thunderbolts
+          in Greek mythology?
         </h2>
         <button class="question-card__button">show answer</button>
         <p class="question-card__answer"></p>
@@ -76,9 +82,17 @@
           alt="bookmark"
         />
       </a>
+      <a href="form.html" class="footer__link"
+        ><img
+          class="footer__icon"
+          src="https://cdn-icons-png.flaticon.com/512/104/104090.png"
+          alt="form"
+        />
+      </a>
       <a href="profile.html" class="footer__link">
         <img class="footer__icon" src="./assets/profile.png" alt="profile" />
       </a>
     </footer>
   </body>
+  <script src="./index.js"></script>
 </html>

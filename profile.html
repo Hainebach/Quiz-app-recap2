@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body data-js="body">
     <header>
       <h1>Quiz App</h1>
     </header>
@@ -41,7 +41,7 @@
             >Dark Mode</label
           >
           <div class="switch-container">
-            <input id="dark-mode" type="checkbox" />
+            <input id="dark-mode" data-js="dark-mode" type="checkbox" />
             <div class="switch"></div>
           </div>
         </div>
@@ -58,6 +58,13 @@
           alt="bookmark"
         />
       </a>
+      <a href="form.html" class="footer__link"
+        ><img
+          class="footer__icon"
+          src="https://cdn-icons-png.flaticon.com/512/104/104090.png"
+          alt="form"
+        />
+      </a>
       <a href="profile.html" class="footer__link footer__link--active">
         <img
           class="footer__icon"
@@ -67,4 +74,5 @@
       </a>
     </footer>
   </body>
+  <script src="./profile.js"></script>
 </html>
